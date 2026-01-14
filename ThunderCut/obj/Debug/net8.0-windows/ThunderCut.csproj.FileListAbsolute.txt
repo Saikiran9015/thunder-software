@@ -36,3 +36,5 @@ C:\Users\abbus\Documents\software\ThunderCut\obj\Debug\net8.0-windows\refint\Thu
 C:\Users\abbus\Documents\software\ThunderCut\obj\Debug\net8.0-windows\ThunderCut.pdb
 C:\Users\abbus\Documents\software\ThunderCut\obj\Debug\net8.0-windows\ThunderCut.genruntimeconfig.cache
 C:\Users\abbus\Documents\software\ThunderCut\obj\Debug\net8.0-windows\ref\ThunderCut.dll
+C:\Users\abbus\Documents\software\ThunderCut\bin\Debug\net8.0-windows\Assets\thunder_logo.png
+C:\Users\abbus\Documents\software\ThunderCut\obj\Debug\net8.0-windows\ThunderCut.sourcelink.json

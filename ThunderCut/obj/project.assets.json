@@ -375,11 +375,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abbus\\Documents\\software\\thundercut\\ThunderCut.csproj",
+      "projectUniqueName": "C:\\Users\\abbus\\Documents\\software\\ThunderCut\\ThunderCut.csproj",
       "projectName": "ThunderCut",
-      "projectPath": "C:\\Users\\abbus\\Documents\\software\\thundercut\\ThunderCut.csproj",
+      "projectPath": "C:\\Users\\abbus\\Documents\\software\\ThunderCut\\ThunderCut.csproj",
       "packagesPath": "C:\\Users\\abbus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abbus\\Documents\\software\\thundercut\\obj\\",
+      "outputPath": "C:\\Users\\abbus\\Documents\\software\\ThunderCut\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\abbus\\AppData\\Roaming\\NuGet\\NuGet.Config",
