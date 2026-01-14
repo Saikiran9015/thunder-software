@@ -30,11 +30,11 @@ function App() {
             <span className="text-gradient">Mobile Skins & Protection</span>
           </h1>
           <p>
-            The ultimate software for managing, designing, and cutting screen protectors and mobile skins. 
+            The ultimate software for managing, designing, and cutting screen protectors and mobile skins.
             Compatible with 5000+ device models.
           </p>
           <div className="hero-buttons">
-            <a href="#download" className="btn btn-primary">Download v2.0</a>
+            <a href="/ThunderCut-Setup.zip" className="btn btn-primary" download>Download v2.0</a>
             <a href="#demo" className="btn btn-outline">Watch Demo</a>
           </div>
         </div>
@@ -48,8 +48,8 @@ function App() {
             <p className="text-muted">Intuitive interface with powerful path editing capabilities.</p>
           </div>
           <div className="preview-mockup">
-             {/* Placeholder for the app screenshot - using CSS to mimic a UI for now */}
-             <div className="preview-content">Desktop Application Interface Preview</div>
+            {/* Placeholder for the app screenshot - using CSS to mimic a UI for now */}
+            <div className="preview-content">Desktop Application Interface Preview</div>
           </div>
         </div>
       </section>
@@ -61,7 +61,7 @@ function App() {
             <h2>Why Choose ThunderCut?</h2>
             <p>Built for speed, accuracy, and business growth.</p>
           </div>
-          
+
           <div className="features-grid">
             <div className="feature-card">
               <div className="feature-icon">✂️</div>
