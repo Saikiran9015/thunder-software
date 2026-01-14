@@ -1,0 +1,68 @@
+<UserControl x:Class="ThunderCut.Views.CutPreviewView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ThunderCut.Views"
+             xmlns:main="clr-namespace:ThunderCut"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1200"
+             Background="#121212">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#1E1E1E" Padding="20,15" BorderBrush="#333333" BorderThickness="0,0,0,1">
+            <Grid>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <Button Click="OnBackToDesign" Background="Transparent" BorderThickness="0" Foreground="#00CCFF" Margin="0,0,20,0" Cursor="Hand">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="←" FontSize="18" Margin="0,0,5,0"/>
+                            <TextBlock Text="BACK TO DESIGN" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                    <TextBlock Text="CUT PREVIEW" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="CALIBRATE CUTTER" Background="#333333" Foreground="White" Padding="15,8" Margin="0,0,10,0" BorderThickness="0"/>
+                    <Button x:Name="SendToCutterBtn" Content="SEND TO CUTTER" Background="#00CCFF" Foreground="Black" FontWeight="Bold" Padding="20,8" BorderThickness="0" Click="OnSendToCutter"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Preview Area -->
+        <Grid Grid.Row="1" Margin="40">
+            <Border BorderBrush="#444444" BorderThickness="1" Background="#1A1A1A" CornerRadius="8">
+                <main:DesignCanvas x:Name="PreviewCanvas" IsHitTestVisible="False"/>
+            </Border>
+            
+            <!-- Quick Stats -->
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Margin="20">
+                <Border Background="#2A2A2A" Padding="15" CornerRadius="8" BorderBrush="#444444" BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock Text="MATERIAL ESTIMATE" FontSize="10" Foreground="#888888" Margin="0,0,0,5"/>
+                        <TextBlock x:Name="MaterialSizeText" Text="77 x 160 mm" FontSize="14" Foreground="White" FontWeight="Bold"/>
+                        <Separator Background="#444444" Margin="0,10"/>
+                        <TextBlock Text="ESTIMATED TIME" FontSize="10" Foreground="#888888" Margin="0,0,0,5"/>
+                        <TextBlock Text="00:14 Seconds" FontSize="14" Foreground="#00FF88" FontWeight="Bold"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+
+        <!-- Footer / Machine Status -->
+        <Border Grid.Row="2" Background="#1E1E1E" Padding="20,10" BorderBrush="#333333" BorderThickness="0,1,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Ellipse Width="10" Height="10" Fill="#00FF88" Margin="0,0,10,0"/>
+                <TextBlock Text="CUTTER STATUS: READY" Foreground="#888888" VerticalAlignment="Center" FontSize="11"/>
+                <Separator Width="40" Background="Transparent"/>
+                <TextBlock Text="SELECTED MATERIAL: TPU - PREMIUM CLEAR" Foreground="#888888" VerticalAlignment="Center" FontSize="11"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>
